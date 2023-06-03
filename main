@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <title>Login Page for NETVA</title>
+
+  
+
+  <style>
+
+    body {
+
+      font-family: Arial, sans-serif;
+
+    }
+
+    .container {
+
+      max-width: 300px;
+
+      margin: 0 auto;
+
+      padding: 20px;
+
+      border: 1px solid #ccc;
+
+      border-radius: 5px;
+
+    }
+
+    .container h2 {
+
+      text-align: center;
+
+    }
+
+    .container input[type="text"],
+
+    .container input[type="password"] {
+
+      width: 100%;
+
+      padding: 10px;
+
+      margin-bottom: 10px;
+
+      border: 1px solid #ccc;
+
+      border-radius: 5px;
+
+    }
+
+    .container input[type="submit"] {
+
+      width: 100%;
+
+      padding: 10px;
+
+      background-color: #4CAF50;
+
+      color: white;
+
+      border: none;
+
+      border-radius: 5px;
+
+      cursor: pointer;
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h2>Login</h2>
+
+    <form id="loginForm">
+
+      <input type="text" id="username" placeholder="Username" required>
+
+      <input type="password" id="password" placeholder="Password" required>
+
+      <input type="submit" value="Login">
+
+    </form>
+
+  </div>
+
+  <script>
+
+    // Function to handle the form submission
+
+    function handleLogin(event) {
+
+      event.preventDefault(); // Prevent the form from submitting
+
+      // Get the values from the input fields
+
+      const username = document.getElementById('username').value;
+
+      const password = document.getElementById('password').value;
+
+      // Perform some basic validation (you can add more complex validation)
+
+      if (username === 'NETVA' && password === 'Topa') {
+
+        // Redirect to another page
+
+        window.location.href = 'https://www.google.co.in/';
+
+      } else {
+
+        alert('Invalid username or password');
+
+      }
+
+    }
+
+    // Attach the event listener to the form
+
+    const form = document.getElementById('loginForm');
+
+    form.addEventListener('submit', handleLogin);
+
+  </script>
+
+  
+
+  
+
+  <script>
+
+  // function for alert
+
+    function showAlertOnTop(message) {
+
+  // Create the alert element
+
+  var alertElement = document.createElement('div');
+
+  alertElement.className = 'alert';
+
+  alertElement.textContent = message;
+
+  // Apply styles to the alert element
+
+  alertElement.style.position = 'fixed';
+
+  alertElement.style.top = '0';
+
+  alertElement.style.left = '0';
+
+  alertElement.style.width = '100%';
+
+  alertElement.style.backgroundColor = 'red';
+
+  alertElement.style.color = 'white';
+
+  alertElement.style.padding = '10px';
+
+  alertElement.style.textAlign = 'center';
+
+  alertElement.style.zIndex = '9999';
+
+  // Append the alert element to the body
+
+  document.body.appendChild(alertElement);
+
+}
+
+// Usage example
+
+showAlertOnTop('Ask the user and password from him who had sent you this.');
+
+  </script>
+
+  
+
+</body>
+
+</html>
