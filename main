@@ -112,7 +112,7 @@
 
         // Redirect to another page
 
-        window.location.href = 'https://www.google.co.in/';
+        window.location.href = 'https://sites.google.com/view/netvaschool/home';
 
       } else {
 
